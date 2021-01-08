@@ -60,7 +60,11 @@ cd ~/.conky/
 ./startconky
 
 ```
-### adding to startup applications
+### autostart
+add to startup applications:
+```
+/bin/bash -c "sh ~/.conky/startconky.sh"
+```
 https://askubuntu.com/questions/48321/how-do-i-start-applications-automatically-on-login
 
 ### sources:

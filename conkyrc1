@@ -2,6 +2,7 @@
 
 
 conky.config = {
+    xinerama_head = 1,
     alignment = 'top_left',
     background = false,
     border_width = 0.5,

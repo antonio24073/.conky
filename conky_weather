@@ -1,4 +1,5 @@
 conky.config = {
+    xinerama_head = 1,
 	background = false,
 	update_interval = 300,
 	double_buffer = true,
