@@ -1,0 +1,101 @@
+-- vim: ts=4 sw=4 noet ai cindent syntax=lua
+
+
+conky.config = {
+	xinerama_head = 2,
+    alignment = 'top_right',
+    background = false,
+    border_width = 0.5,
+    cpu_avg_samples = 4,
+    default_color = 'white',
+    default_outline_color = 'grey',
+    default_shade_color = 'black',
+    draw_borders = true,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    use_xft = true,
+    font = 'DejaVu Sans Mono:size=10',
+    gap_x = 465,
+    gap_y = 50,
+    minimum_height = 5,
+    minimum_width = 5,
+    net_avg_samples = 2,
+    double_buffer = true,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+    own_window = true,
+    own_window_colour = '000000',
+    own_window_class = 'Conky',
+    own_window_argb_visual = true,
+    own_window_argb_count = 0,
+    own_window_type = 'dock',
+    own_window_transparent = true,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    stippled_borders = 0,
+    update_interval = 1,
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = false,
+    show_graph_range = false,
+	color1 = '#DDDDDD'
+}
+
+conky.text = [[
+
+${font Entopia:bold:size=12}${color green}NETWORK ${hr 2}${font DejaVu Sans Mono:size=9}
+${offset 15}${color}Ext IP Addr ${color red}${alignr}${execi 1800 curl ipinfo.io/ip}
+${offset 15}${color}IPv4 Addr ${color red}${alignr}${addr wlp3s0}
+${offset 5}${font Entopia:bold:size=8}${color orange}${wireless_essid wlp3s0} ${stippled_hr 1}
+${offset 15}${color}${font DejaVu Sans Mono:size=9}WiFi ${alignr}${wireless_link_qual_perc 
+wlp3s0}%(${wireless_link_qual wlp3s0}/${wireless_link_qual_max wlp3s0}) ${color red}${addr wlp3s0}
+${offset 15}${font}${color green}▼ $color${totaldown wlp3s0} ${alignr}${color green}▲ $color${totalup wlp3s0}
+${color black}${downspeedgraph wlp3s0 32,125 ff0000 0000ff}${color black}${upspeedgraph wlp3s0 32,125 0000ff ff0000}
+$color${font DejaVu Sans Mono:size=8} ▼ ${downspeed wlp3s0}${alignc}${color orange} ${wireless_essid v}${alignr}${color}▲ ${upspeed wlp3s0}
+
+#${color Tan2}ESTABLISHED Connections${color DarkSlateGray}${hr 2}
+#
+#${offset 10}${color lightgrey}Inbound: ${color white}${tcp_portmon 1 32767 count}    ${color lightgrey}Outbound: ${color white}${tcp_portmon 32768 61000 count}${alignr}${color lightgrey}Total: ${color white}${tcp_portmon 1 65535 count}
+#
+#${color slate grey}Process                 ${color slate grey}Remote Host                     ${color slate grey}L-Port ${alignr}${color slate grey}R-Port${color lightgrey}
+#
+#${texeci 10 netstat -ap | grep 'ESTABLISHED' | sed -r 's|.*[0-9.]+:([0-9]*)\s*([^:]+):([a-zA-Z]+)[^/]+/([a-zA-Z0-9]*)|\4 \2 \1 \3|' | awk '{printf("%-14s %-20s %5s %7s\n",$1,$2,$3,$4)}'}
+#old way for network
+${color1}Port(s) ${alignr}#Connections
+${color}Inbound: ${tcp_portmon 1 32767 count}  Outbound: ${tcp_portmon 32768 61000 count}${alignr} ALL: ${tcp_portmon 1 65535 count}
+
+${color1}Inbound Connection ${alignr} Local Service/Port${color}
+${tcp_portmon 1 32767 rhost 0} ${alignr} ${tcp_portmon 1 32767 lservice 0}
+${tcp_portmon 1 32767 rhost 1} ${alignr} ${tcp_portmon 1 32767 lservice 1}
+${tcp_portmon 1 32767 rhost 2} ${alignr} ${tcp_portmon 1 32767 lservice 2}
+${tcp_portmon 1 32767 rhost 3} ${alignr} ${tcp_portmon 1 32767 lservice 3}
+${tcp_portmon 1 32767 rhost 4} ${alignr} ${tcp_portmon 1 32767 lservice 4}
+${tcp_portmon 1 32767 rhost 5} ${alignr} ${tcp_portmon 1 32767 lservice 5}
+${tcp_portmon 1 32767 rhost 6} ${alignr} ${tcp_portmon 1 32767 lservice 6}
+${tcp_portmon 1 32767 rhost 7} ${alignr} ${tcp_portmon 1 32767 lservice 7}
+${tcp_portmon 1 32767 rhost 8} ${alignr} ${tcp_portmon 1 32767 lservice 8}
+${tcp_portmon 1 32767 rhost 9} ${alignr} ${tcp_portmon 1 32767 lservice 9}
+${tcp_portmon 1 32767 rhost 10} ${alignr} ${tcp_portmon 1 32767 lservice 10}
+${tcp_portmon 1 32767 rhost 11} ${alignr} ${tcp_portmon 1 32767 lservice 11}
+${tcp_portmon 1 32767 rhost 12} ${alignr} ${tcp_portmon 1 32767 lservice 12}
+${tcp_portmon 1 32767 rhost 13} ${alignr} ${tcp_portmon 1 32767 lservice 13}
+${tcp_portmon 1 32767 rhost 14} ${alignr} ${tcp_portmon 1 32767 lservice 14}
+${tcp_portmon 1 32767 rhost 15} ${alignr} ${tcp_portmon 1 32767 lservice 15}
+${tcp_portmon 1 32767 rhost 16} ${alignr} ${tcp_portmon 1 32767 lservice 16}
+${tcp_portmon 1 32767 rhost 17} ${alignr} ${tcp_portmon 1 32767 lservice 17}
+${tcp_portmon 1 32767 rhost 18} ${alignr} ${tcp_portmon 1 32767 lservice 18}
+${tcp_portmon 1 32767 rhost 19} ${alignr} ${tcp_portmon 1 32767 lservice 19}
+${tcp_portmon 1 32767 rhost 20} ${alignr} ${tcp_portmon 1 32767 lservice 20}
+${tcp_portmon 1 32767 rhost 21} ${alignr} ${tcp_portmon 1 32767 lservice 21}
+${tcp_portmon 1 32767 rhost 22} ${alignr} ${tcp_portmon 1 32767 lservice 22}
+${tcp_portmon 1 32767 rhost 23} ${alignr} ${tcp_portmon 1 32767 lservice 23}
+${tcp_portmon 1 32767 rhost 24} ${alignr} ${tcp_portmon 1 32767 lservice 24}
+${tcp_portmon 1 32767 rhost 25} ${alignr} ${tcp_portmon 1 32767 lservice 25}
+${tcp_portmon 1 32767 rhost 26} ${alignr} ${tcp_portmon 1 32767 lservice 26}
+${tcp_portmon 1 32767 rhost 27} ${alignr} ${tcp_portmon 1 32767 lservice 27}
+${tcp_portmon 1 32767 rhost 28} ${alignr} ${tcp_portmon 1 32767 lservice 28}
+${tcp_portmon 1 32767 rhost 29} ${alignr} ${tcp_portmon 1 32767 lservice 29}
+${tcp_portmon 1 32767 rhost 30} ${alignr} ${tcp_portmon 1 32767 lservice 30}
+
+]]
