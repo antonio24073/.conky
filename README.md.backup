@@ -54,7 +54,6 @@ sudo rm -Rfv ~/.cache/weather.json
  and run ~/.conky/startconky two times
 
 # Start
-
 ```
 cd ~/.conky/
 ./startconky
@@ -62,6 +61,8 @@ cd ~/.conky/
 ```
 ### adding to startup applications
 https://askubuntu.com/questions/48321/how-do-i-start-applications-automatically-on-login
+
+
 
 ### sources:
 https://github.com/rpungartnik/MyConkyConfig
