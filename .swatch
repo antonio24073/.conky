@@ -1,0 +1,4 @@
+#!/bin/sh
+
+killall conky
+/bin/bash -c "sh ~/.conky/startconky.sh"

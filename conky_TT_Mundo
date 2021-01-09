@@ -1,5 +1,10 @@
 conky.config = {
     xinerama_head = 1,
+	alignment = 'top_left',
+	gap_x = 850,
+	gap_y = 570,
+    maximum_width = 300,
+
 	background = false,
 	update_interval = 300,
 	double_buffer = true,
@@ -13,9 +18,6 @@ conky.config = {
 	own_window_argb_value = 0,
 	own_window_transparent = true,
 
-	gap_x = 295,
-	gap_y = 175,
-
 	border_inner_margin = 15,
 	border_outer_margin = 0,
 
@@ -23,8 +25,6 @@ conky.config = {
 	draw_outline = false,
 	draw_borders = false,
 	draw_graph_borders = false,
-
-	alignment = 'bottom_left',
 
 	use_xft = true,
 	xftalpha = 0,
