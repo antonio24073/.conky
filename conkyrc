@@ -2,7 +2,6 @@
 
 
 conky.config = {
-    xinerama_head = 1,
 	xinerama_head = 2,
     alignment = 'top_right',
     background = false,
@@ -47,7 +46,6 @@ conky.text = [[
 
 ${font Entopia:bold:size=12}${color green}NETWORK ${hr 2}${font DejaVu Sans Mono:size=9}
 ${offset 15}${color}Ext IP Addr ${color red}${alignr}${execi 1800 curl ipinfo.io/ip}
-${offset 15}${color}IPv4 Addr ${color red}${alignr}${addr wlp3s0}
 ${offset 5}${font Entopia:bold:size=8}${color orange}${wireless_essid wlp3s0} ${stippled_hr 1}
 ${offset 15}${color}${font DejaVu Sans Mono:size=9}WiFi ${alignr}${wireless_link_qual_perc 
 wlp3s0}%(${wireless_link_qual wlp3s0}/${wireless_link_qual_max wlp3s0}) ${color red}${addr wlp3s0}

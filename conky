@@ -1,6 +1,5 @@
 conky.config = {
-    xinerama_head = 1,
-	xinerama_head = 2,
+	xinerama_head = 1,
 	use_xft= true,
 	xftalpha= .1,
 	update_interval= 1,
