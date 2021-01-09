@@ -70,7 +70,7 @@ add to startup applications:
 https://askubuntu.com/questions/48321/how-do-i-start-applications-automatically-on-login
 
 ### multiple monitors
-adjust xinerama_head inside conkyrc1, conkyrc, conkyrc2, conky_weather, conky_TT_Brasil, conky_TT_Mundo
+I couldn't get it to work on multiple screens without problems, if anyone can help I appreciate it.
 
 ### sources:
 https://github.com/rpungartnik/MyConkyConfig
