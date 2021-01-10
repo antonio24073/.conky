@@ -6,7 +6,11 @@ conky.config = {
     alignment = 'top_left',
     gap_x = 5,
     gap_y = 50,
+<<<<<<< HEAD
     maximum_width = 250,
+=======
+    maximum_width = 300,
+>>>>>>> e787f87ef10d7ae7d56412e0a7f9a53feaf0c2fe
 
     background = false,
     border_width = 0.5,
@@ -45,7 +49,11 @@ conky.text = [[
 ${image ~/.face -p 180,5 -s 70x70 -f 86400}${image ~/.pacman -p 20,9 -s 60x60 -f 86400}
 ${font Latin Modern Mono Caps:bold:size=14}${alignc}${color 00ffae}$nodename
 ${font Noto Sans:bold:size=8}${alignc}${desktop_name} ${desktop}/$desktop_number ${font Noto Sans:bold:size=8}${alignc}    ${exec hostnamectl | grep System | cut -c21-40}
+<<<<<<< HEAD
 ${alignc}${exec hostnamectl | grep Architecture | cut -c7-30} ${alignc} ${exec hostnamectl | grep Kernel | cut -c13-32}
+=======
+${alignc}   ${exec hostnamectl | grep Architecture | cut -c7-30} ${alignc}   ${exec hostnamectl | grep Kernel | cut -c13-32}
+>>>>>>> e787f87ef10d7ae7d56412e0a7f9a53feaf0c2fe
 
 ${font Entopia:bold:size=12}${color blue}SYSTEM ${hr 2}${font}
 ${offset 15}${font}${color FFFDE2}Procs:$color $processes  ${color FFFDE2}Run:$color $running_processes Temp: ${acpitemp}°C
