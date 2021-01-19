@@ -1,4 +1,4 @@
-The project is paralyzed. It has some bugs and I stop it.
+The project is paralyzed. It has some bugs and I stopped it.
 
 ![alt text](./Screenshot-20210108114742-1363x767.png)
 ![alt text](./Screenshot-20210108205741-1364x767.png)
