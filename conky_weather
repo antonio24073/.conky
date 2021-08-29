@@ -1,6 +1,6 @@
 conky.config = {
     xinerama_head = 1,
-	alignment = 'top_left',
+	alignment = 'top_right',
 	gap_x = 1050,
 	gap_y = 0,
 

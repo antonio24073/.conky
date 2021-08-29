@@ -1,11 +1,15 @@
 conky.config = {
 	xinerama_head = 1,
+    alignment = 'top_left',
+    gap_x = 300,
+    gap_y = 50,
+    maximum_width = 300,
+	
 	use_xft= true,
 	xftalpha= .1,
 	update_interval= 1,
 	total_run_times= 0,
 
-	background= true,
 
 	own_window= true,
 	own_window_type= 'desktop',

@@ -3,8 +3,8 @@
 
 conky.config = {
     xinerama_head = 1,
-    alignment = 'top_left',
-    gap_x = 580,
+    alignment = 'top_right',
+    gap_x = 700,
     gap_y = 50,
     maximum_width = 400,
 
