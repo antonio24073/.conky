@@ -6,11 +6,7 @@ conky.config = {
     alignment = 'top_left',
     gap_x = 580,
     gap_y = 50,
-<<<<<<< HEAD
-    maximum_width = 250,
-=======
-    maximum_width = 300,
->>>>>>> e787f87ef10d7ae7d56412e0a7f9a53feaf0c2fe
+    maximum_width = 400,
 
     background = false,
     border_width = 0.5,

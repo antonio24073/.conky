@@ -1,13 +1,9 @@
 conky.config = {
     xinerama_head = 1,
 	alignment = 'top_left',
-	gap_x = 850,
+	gap_x = 1050,
 	gap_y = 360,
-<<<<<<< HEAD
-    maximum_width = 250,
-=======
     maximum_width = 300,
->>>>>>> e787f87ef10d7ae7d56412e0a7f9a53feaf0c2fe
 
 	background = false,
 	update_interval = 300,

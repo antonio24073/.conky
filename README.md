@@ -1,4 +1,4 @@
-The project is paralyzed. It has some bugs and I stopped it.
+The project is paralyzed. It has some bugs and I stopped it but I believe it is working yet.
 
 ![alt text](./Screenshot-20210108114742-1363x767.png)
 ![alt text](./Screenshot-20210108205741-1364x767.png)
@@ -59,9 +59,7 @@ sudo rm -Rfv ~/.cache/weather.json
 # Start
 
 ```
-cd ~/.conky/
-./startconky
-
+sh ~/.conky/startconky
 ```
 ### autostart
 add to startup applications:
