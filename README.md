@@ -77,12 +77,10 @@ https://github.com/xyphanajay/conky
 https://gist.github.com/anonymous/fa08c4e430e5ef8db76e5c78c77211a6#file-conkyrc_orange_4k
 https://github.com/pascalwhoop/conky.conf
 
-------------------------------
+------------------------
 
 # Donations
 
-Help keep projects free:
-
-https://www.paypal.com/donate/?business=X3W3QTHS7BDW4&no_recurring=0&item_name=Help+me+to+continue+the+free+projects&currency_code=BRL
+Help keep projects free: <a href="https://www.paypal.com/donate/?business=X3W3QTHS7BDW4&no_recurring=0&item_name=Help+me+to+continue+the+free+projects&currency_code=BRL" >Click Here</a>
 
 
