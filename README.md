@@ -1,5 +1,3 @@
-The project is paralyzed. It has some bugs and I stopped it but I believe it is working yet.
-
 ![alt text](./Screenshot-20210108114742-1363x767.png)
 ![alt text](./Screenshot-20210108205741-1364x767.png)
 
@@ -77,10 +75,11 @@ https://github.com/xyphanajay/conky
 https://gist.github.com/anonymous/fa08c4e430e5ef8db76e5c78c77211a6#file-conkyrc_orange_4k
 https://github.com/pascalwhoop/conky.conf
 
-------------------------
+
+----------------------
 
 # Donations
 
-Help keep projects free: <a href="https://www.paypal.com/donate/?business=X3W3QTHS7BDW4&no_recurring=0&item_name=Help+me+to+continue+the+free+projects&currency_code=BRL" >Click Here</a>
-
-
+- To more advanced features contact me please.
+- Help keep projects free: <a href="https://www.paypal.com/donate/?business=X3W3QTHS7BDW4&no_recurring=0&currency_code=USD" >Click Here</a>
+------------------------
